@@ -69,7 +69,7 @@ public class MainCommand extends BukkitCommand implements ParentCommand {
         new CmdLang(this, "lang");
         new CmdTeleporter(this, "teleporter");
         if (getServerType() != ServerType.BUNGEE) {
-            new CmdGUI(this, "gui");
+            new CmdGUI(this, "menu");
         }
         new CmdStats(this, "stats");
         new CmdStart(this, "forceStart");
