@@ -45,13 +45,13 @@ public class PAPISupport extends PlaceholderExpansion {
     @NotNull
     @Override
     public String getIdentifier() {
-        return "bw1058";
+        return "bw";
     }
 
     @NotNull
     @Override
     public String getAuthor() {
-        return "andrei1058";
+        return "Custom";
     }
 
     @NotNull
