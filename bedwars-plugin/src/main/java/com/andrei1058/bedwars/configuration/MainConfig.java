@@ -110,9 +110,9 @@ public class MainConfig extends ConfigManager {
         yml.addDefault(ConfigPath.GENERAL_FIREBALL_KNOCKBACK_HORIZONTAL, 1.0);
         yml.addDefault(ConfigPath.GENERAL_FIREBALL_KNOCKBACK_VERTICAL, 0.65);
         yml.addDefault(ConfigPath.GENERAL_FIREBALL_COOLDOWN, 0.5);
-        yml.addDefault(ConfigPath.GENERAL_FIREBALL_DAMAGE_SELF, 2.0);
-        yml.addDefault(ConfigPath.GENERAL_FIREBALL_DAMAGE_ENEMY, 2.0);
-        yml.addDefault(ConfigPath.GENERAL_FIREBALL_DAMAGE_TEAMMATES, 0.0);
+        yml.addDefault(ConfigPath.GENERAL_FIREBALL_DAMAGE_SELF, 0.75);
+        yml.addDefault(ConfigPath.GENERAL_FIREBALL_DAMAGE_ENEMY, 3.0);
+        yml.addDefault(ConfigPath.GENERAL_FIREBALL_DAMAGE_TEAMMATES, 1.5);
         //
         yml.addDefault("database.enable", false);
         yml.addDefault("database.host", "localhost");
@@ -133,7 +133,7 @@ public class MainConfig extends ConfigManager {
 
         /* Multi-Arena Lobby Command Items */
         saveLobbyCommandItem("stats", "bw stats", false, getForCurrentVersion("SKULL_ITEM", "SKULL_ITEM", "PLAYER_HEAD"), 3, 0);
-        saveLobbyCommandItem("arena-selector", "bw gui", true, "CHEST", 5, 4);
+        saveLobbyCommandItem("arena-selector", "bw menu", true, "CHEST", 5, 4);
         saveLobbyCommandItem("leave", "bw leave", false, getForCurrentVersion("BED", "BED", "RED_BED"), 0, 8);
 
         /* Pre Game Command Items */
