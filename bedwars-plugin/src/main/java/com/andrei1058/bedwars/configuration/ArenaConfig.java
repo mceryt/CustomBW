@@ -48,11 +48,11 @@ public class ArenaConfig extends ConfigManager {
         yml.addDefault("worldBorder", 300);
         yml.addDefault(ConfigPath.ARENA_Y_LEVEL_KILL, -1);
         //yml.addDefault("disableGeneratorsOnOrphanIslands", false);
-        yml.addDefault(ConfigPath.ARENA_CONFIGURATION_MAX_BUILD_Y, 180);
+        yml.addDefault(ConfigPath.ARENA_CONFIGURATION_MAX_BUILD_Y, 118);
         yml.addDefault(ConfigPath.ARENA_DISABLE_GENERATOR_FOR_EMPTY_TEAMS, false);
-        yml.addDefault(ConfigPath.ARENA_DISABLE_NPCS_FOR_EMPTY_TEAMS, true);
+        yml.addDefault(ConfigPath.ARENA_DISABLE_NPCS_FOR_EMPTY_TEAMS, false);
         yml.addDefault(ConfigPath.ARENA_NORMAL_DEATH_DROPS, false);
-        yml.addDefault(ConfigPath.ARENA_USE_BED_HOLO, true);
+        yml.addDefault(ConfigPath.ARENA_USE_BED_HOLO, false);
         yml.addDefault(ConfigPath.ARENA_ALLOW_MAP_BREAK, false);
         ArrayList<String> rules = new ArrayList<>();
         rules.add("doDaylightCycle:false");
