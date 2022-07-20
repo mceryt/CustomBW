@@ -139,7 +139,7 @@ public class BedWars extends JavaPlugin {
         try {
             Class.forName("org.spigotmc.SpigotConfig");
         } catch (Exception ignored) {
-            this.getLogger().severe("I can't run on your server software. Please check:");
+            this.getLogger().severe("I can't run on your version. Please Kindly use 1.8/1.12/1.16.5 to 1.19");
             this.getLogger().severe("https://gitlab.com/andrei1058/BedWars1058/wikis/compatibility");
             serverSoftwareSupport = false;
             return;
@@ -480,7 +480,7 @@ public class BedWars extends JavaPlugin {
 
         /* Prevent issues on reload */
         for (Player p : Bukkit.getOnlinePlayers()) {
-            p.kickPlayer("BedWars1058 was RELOADED! (do not reload plugins)");
+            p.kickPlayer("BedWars was RELOADED! (do not reload plugins)");
         }
 
         /* Load sounds configuration */
